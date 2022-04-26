@@ -174,7 +174,7 @@ function PastaRecipe() {
 
             <div class="DoneButton" style="position: absolute; padding-right:
     50px; right: 10%;">
-                <button type="button"
+                <button type="button" style="background-color: #C59BEB; padding: 10px"
                     onclick="window.location.href='finishPasta.html'">Done</button>
             </div>
 
