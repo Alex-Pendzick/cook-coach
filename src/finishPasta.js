@@ -74,7 +74,7 @@ function finishPasta() {
                 <img class="card-img-top" src="./509ebb9d146d423b9e310e21a121c87e.png" alt="Cookie" style="display: inline-block; max-width: 30%; position: relative; left: 30%"></img>
 
                 <div class="DoneButton" style="position: absolute; padding-right: 50px; right: 10%;">
-                <button type="button" style="background-color: #C59BEB; width:auto;"
+                <button type="button" style="background-color: #C59BEB; width:auto; padding: 10px"
                     onclick="window.location.href='...'">Record your recipe</button> 
                     {/* update link for implementation */}
                 </div>
