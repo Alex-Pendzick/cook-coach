@@ -49,7 +49,7 @@ function finishPasta() {
             <div class="style=display: flex;">
                 <h2 style="display: inline-block;">Simple Pasta</h2>
                 <img style="display: inline-block; position: absolute; top:
-                    10px; right: 300px; width: 200px" src="./pastaIcon.png" alt="pastaImage"></img>
+                    10px; right: 300px; width: 200px" src="../images/pastaIcon.png" alt="pastaImage"></img>
             </div>
         </div>
 
