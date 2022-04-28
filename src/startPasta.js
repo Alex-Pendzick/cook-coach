@@ -49,7 +49,7 @@ function finishPasta() {
             <div class="style=display: flex;">
                 <h2 style="display: inline-block;">Simple Pasta</h2>
                 <img style="display: inline-block; position: absolute; top:
-                    10px; right: 10px;" src="..." alt="pastaImage"></img>
+                    10px; right: 300px; width: 200px" src="./pastaIcon.png" alt="pastaImage"></img>
             </div>
         </div>
 
@@ -160,7 +160,6 @@ function finishPasta() {
                     <h3>Materials</h3>
                     <div style="margin-left: 25px">
                         <ul>
-                            <!-- add hover images -->
                             <li>large pot (6-8 quarts)</li> 
                             <li>sauce pan</li>
                             <li>large cooking spoon</li>
@@ -169,6 +168,12 @@ function finishPasta() {
 
                     </div>
                 </div>
+            </div>
+
+            <div id="nextButton" style="position: absolute; padding-right:
+                50px; right: 20%; bottom: 30%">
+                <button type="button" style="background-color: #C59BEB; padding: 10px"
+                    onclick="window.location.href='pastaTest.html'">Next</button>
             </div>
         </div>
         
