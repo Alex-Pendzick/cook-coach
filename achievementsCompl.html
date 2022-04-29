@@ -28,6 +28,13 @@
                 font-size: 22px;
                 line-height: 32px;
             }
+            button {
+                font-family: 'Coming Soon';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+            }
         </style>
     </head>
 
@@ -35,8 +42,9 @@
         <!-- ADD NAV BAR -->
         <div class="card bg-info mb-3" style="margin: auto; margin-left: 200px; margin-right: 200px; margin-top: 50px; border-style: solid; background-color: #EDEDED; width: auto">
             <div class="card-body" style="padding: 10px; text-align: center;">
-                <h1 class="card-text">0 / 100 Achievements Completed</h1>
-                <p class="card-text">Start making recipes to earn achievements!</p>
+                <h1 class="card-text">2 / 100 Achievements Completed</h1>
+                <!-- ADD BUTTON TO SEE COMPL ACHIEVEMENTS -->
+                <button type="button" style="background-color: #C59BEB; padding: 10px; width: 50%;" onclick="window.location.href='allComplete.html'">View Completed Achievements</button>
             </div>
         </div>
 
@@ -48,18 +56,9 @@
 
         <br><br>
         <!-- add achievements -->
-        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 100px; border-style: solid; border-color: #54DD69; background-color: #87FF8B; width: 300px">
-            <div class="card-body" style="padding: 30px;">
-                <p class="card-text" style="text-align: center; font-size: 80px; padding-top: 15px">1</p>
-                <br>
-                <p class="card-text" style="text-align: center;">Complete 1 recipe</p>
-                <p class="card-text" style="text-align: center;">+ 250 XP   + 50 coins</p>
-                <hr style="border-color: #54DD69">
-                <p class="card-text" style="text-align: center;">Gettin' Cookin'!</p>
-            </div>
-        </div>
 
-        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 250px; border-style: solid; border-color: #54DD69; background-color: #87FF8B; width: 300px">
+
+        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 100px; border-style: solid; border-color: #54DD69; background-color: #87FF8B; width: 300px">
             <div class="card-body" style="padding: 30px;">
                 <p class="card-text" style="text-align: center; font-size: 80px; padding-top: 15px">5</p>
                 <br>
@@ -70,7 +69,7 @@
             </div>
         </div>
 
-        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 400px; border-style: solid; border-color: #54DD69; background-color: #87FF8B; width: 300px">
+        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 250px; border-style: solid; border-color: #54DD69; background-color: #87FF8B; width: 300px">
             <div class="card-body" style="padding: 30px;">
                 <p class="card-text" style="text-align: center; font-size: 80px; padding-top: 15px">10</p>
                 <br>
@@ -78,6 +77,16 @@
                 <p class="card-text" style="text-align: center;">+ 750 XP   + 200 coins</p>
                 <hr style="border-color: #54DD69">
                 <p class="card-text" style="text-align: center;">Amateur Chef!</p>
+            </div>
+        </div>
+        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 400px; border-style: solid; border-color: #54DD69; background-color: #87FF8B; width: 300px">
+            <div class="card-body" style="padding: 30px;">
+                <p class="card-text" style="text-align: center; font-size: 80px; padding-top: 15px">20</p>
+                <br>
+                <p class="card-text" style="text-align: center;">Complete 20 recipe</p>
+                <p class="card-text" style="text-align: center;">+ 1000 XP   + 300 coins</p>
+                <hr style="border-color: #54DD69">
+                <p class="card-text" style="text-align: center;">Sous Chef!</p>
             </div>
         </div>
 
@@ -93,17 +102,6 @@
         <!-- add achievements -->
         <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 100px; border-style: solid; border-color: #8257A7; background-color: #A379C980; width: 300px">
             <div class="card-body" style="padding: 30px;">
-                <img style="width:100px; position:relative; margin-left:70px; padding-top: 25px" src="./images/pastaIcon.png"></img>    
-                <br><br>
-                <p class="card-text" style="text-align: center;">Make a pasta recipe</p>
-                <p class="card-text" style="text-align: center;">+ 250 XP   + 50 coins</p>
-                <hr style="border-color: #8257A7">
-                <p class="card-text" style="text-align: center;">Pasta Pursuer</p>
-            </div>
-        </div>
-
-        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 250px; border-style: solid; border-color: #8257A7; background-color: #A379C980; width: 300px">
-            <div class="card-body" style="padding: 30px;">
                 <img style="width:100px; position:relative; margin-left:70px; padding-top: 25px" src="./images/steakIcon.png"></img>    
                 <br><br>
                 <p class="card-text" style="text-align: center;">Make a meat recipe</p>
@@ -113,7 +111,7 @@
             </div>
         </div>
 
-        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 400px; border-style: solid; border-color: #8257A7; background-color: #A379C980; width: 300px">
+        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 250px; border-style: solid; border-color: #8257A7; background-color: #A379C980; width: 300px">
             <div class="card-body" style="padding: 30px;">
                 <img style="width:100px; position:relative; margin-left:70px;" src="./images/soupIcon.png"></img>    
                 <br><br>
@@ -121,6 +119,17 @@
                 <p class="card-text" style="text-align: center;">+ 250 XP   + 50 coins</p>
                 <hr style="border-color: #8257A7">
                 <p class="card-text" style="text-align: center;">Soup Slurper</p>
+            </div>
+        </div>
+
+        <div class="card bg-info mb-3" style="display: inline-block; position:relative; left: 400px; border-style: solid; border-color: #8257A7; background-color: #A379C980; width: 300px">
+            <div class="card-body" style="padding: 30px;">
+                <img style="width:100px; position:relative; margin-left:70px; padding-top: 19px" src="./images/fishIcon.png"></img>    
+                <br><br>
+                <p class="card-text" style="text-align: center;">Make a fish recipe</p>
+                <p class="card-text" style="text-align: center;">+ 250 XP   + 50 coins</p>
+                <hr style="border-color: #8257A7">
+                <p class="card-text" style="text-align: center;">Fish Fanatic</p>
             </div>
         </div>
 
