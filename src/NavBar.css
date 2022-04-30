@@ -1,0 +1,49 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2AB7CA;
+}
+
+li {
+    float: left;
+}
+
+i {
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-bottom: 4px;
+}
+  
+a, a:visited, a:link {
+    font-weight: bold;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 4px solid #2AB7CA;
+    border-bottom-style: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+a.active {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 4px solid black;
+    border-bottom-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: #22AABB;
+}
+
