@@ -1,5 +1,7 @@
 import React from 'react';
-import './StartPasta.css'
+import './StartPasta.css';
+import { Link } from "react-router-dom";
+import "./bootstrap.min.css";
 
 var clicks = 1;
 var pastaAmt = 0.25;
@@ -10,9 +12,9 @@ function onClick() {
     clicks += 1;
     pastaAmt = .25 * clicks;
     sauceAmt = .25 * clicks;
-    document.getElementById("clicks").innerHTML = clicks;
-    document.getElementById("pastaAmt").innerHTML = pastaAmt;
-    document.getElementById("sauceAmt").innerHTML = sauceAmt;
+    // document.getElementById("clicks").innerHTML = clicks;
+    // document.getElementById("pastaAmt").innerHTML = pastaAmt;
+    // document.getElementById("sauceAmt").innerHTML = sauceAmt;
 
 };
 
@@ -26,9 +28,9 @@ function onClickBack() {
     }
     pastaAmt = .25 * clicks;
     sauceAmt = .25 * clicks;
-    document.getElementById("clicks").innerHTML = clicks;
-    document.getElementById("pastaAmt").innerHTML = pastaAmt;
-    document.getElementById("sauceAmt").innerHTML = sauceAmt;
+    // document.getElementById("clicks").innerHTML = clicks;
+    // document.getElementById("pastaAmt").innerHTML = pastaAmt;
+    // document.getElementById("sauceAmt").innerHTML = sauceAmt;
 }
 
 function StartPasta() {
@@ -48,26 +50,26 @@ function StartPasta() {
 
             <body>
                 <div>
-                    <div class="container">
+                    <div className="container">
 
-                        <div class="style=display: flex;">
+                        <div style="display: flex;">
                             <h3 style="display: inline-block;">Simple Pasta</h3>
                             <img style="display: inline-block; position: absolute; top:
-                    10px; right: 300px; width: 200px" src="./images/pastaIcon.png" alt="pastaImage"></img>
+                    10px; right: 300px; width: 200px" src="../images/pastaIcon.png" alt="pastaImage"></img>
                         </div>
                     </div>
 
-                    <div class="container">
+                    <div className="container">
                         <div style="float:left">
                             <div>
                                 <h3>Servings</h3>
                                 <div style="margin-left: 50px">
-                                    <button type="button" class="servings" style="display: inline-block;
-                        background-color: #FF0000;" onClick="onClickBack()">-</button>
+                                    <button type="button" className="servings" style="display: inline-block;
+                        background-color: #FF0000;" onClick={onClickBack()}>-</button>
                                     <p style="display: inline-block; padding-left: 10px;
                         padding-right: 10px; font-size: 32px;"><span id="clicks">1</span></p>
-                                    <button class="servings" type="button" style="display: inline-block;
-                        background-color: #87FF8B" onClick="onClick()">+</button>
+                                    <button className="servings" type="button" style="display: inline-block;
+                        background-color: #87FF8B" onClick={onClick()}>+</button>
                                 </div>
 
                             </div>
@@ -76,53 +78,53 @@ function StartPasta() {
                                 <h3>Substitution Options</h3>
                                 <div style="margin-left: 50px">
                                     <div>
-                                        <button type="button" style="background-color: #C59BEB;" class="btn btn-primary
+                                        <button type="button" style="background-color: #C59BEB;" className="btn btn-primary
                             dropdown-toggle"
                                             data-toggle="collapse"
-                                            data-target="#salt"><span class="caret"></span></button>
+                                            data-target="#salt"><span className="caret"></span></button>
                                         <h1 style="display:inline-block;">salt</h1>
-                                        <div id="salt" class="collapse">
-                                            <p><span class="tab" style="display: inline-block;"></span>Remove</p>
+                                        <div id="salt" className="collapse">
+                                            <p><span className="tab" style="display: inline-block;"></span>Remove</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <button type="button" style="background-color: #C59BEB;" class="btn btn-primary
+                                        <button type="button" style="background-color: #C59BEB;" className="btn btn-primary
                             dropdown-toggle"
                                             data-toggle="collapse"
-                                            data-target="#cheese"><span class="caret"></span></button>
+                                            data-target="#cheese"><span className="caret"></span></button>
                                         <h1 style="display:inline-block;">cheese</h1>
-                                        <div id="cheese" class="collapse">
-                                            <p><span class="tab" style="display: inline-block;"></span>Remove</p>
-                                            <p><span class="tab" style="display: inline-block;"></span>Vegan cheese</p>
+                                        <div id="cheese" className="collapse">
+                                            <p><span className="tab" style="display: inline-block;"></span>Remove</p>
+                                            <p><span className="tab" style="display: inline-block;"></span>Vegan cheese</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <button type="button" style="background-color: #C59BEB;" class="btn btn-primary
+                                        <button type="button" style="background-color: #C59BEB;" className="btn btn-primary
                             dropdown-toggle"
                                             data-toggle="collapse"
-                                            data-target="#basil"><span class="caret"></span></button>
+                                            data-target="#basil"><span className="caret"></span></button>
                                         <h1 style="display:inline-block;">basil</h1>
-                                        <div id="basil" class="collapse">
-                                            <p><span class="tab" style="display: inline-block;"></span>Remove</p>
-                                            <p><span class="tab" style="display: inline-block;"></span>Oregano</p>
-                                            <p><span class="tab" style="display: inline-block;"></span>Spinach</p>
-                                            <p><span class="tab" style="display: inline-block;"></span>Italian Seasoning</p>
+                                        <div id="basil" className="collapse">
+                                            <p><span className="tab" style="display: inline-block;"></span>Remove</p>
+                                            <p><span className="tab" style="display: inline-block;"></span>Oregano</p>
+                                            <p><span className="tab" style="display: inline-block;"></span>Spinach</p>
+                                            <p><span className="tab" style="display: inline-block;"></span>Italian Seasoning</p>
                                         </div>
                                     </div>
 
                                     <div>
-                                        <button type="button" style="background-color: #C59BEB;" class="btn btn-primary
+                                        <button type="button" style="background-color: #C59BEB;" className="btn btn-primary
                             dropdown-toggle"
                                             data-toggle="collapse"
-                                            data-target="#rpf"><span class="caret"></span></button>
+                                            data-target="#rpf"><span className="caret"></span></button>
                                         <h1 style="display:inline-block;">red pepper flakes</h1>
-                                        <div id="rpf" class="collapse">
-                                            <p><span class="tab" style="display: inline-block;"></span>Remove</p>
-                                            <p><span class="tab" style="display: inline-block;"></span>Cayenne Pepper Powder</p>
-                                            <p><span class="tab" style="display: inline-block;"></span>Chipotle Powder</p>
-                                            <p><span class="tab" style="display: inline-block;"></span>Chili Powder</p>
+                                        <div id="rpf" className="collapse">
+                                            <p><span className="tab" style="display: inline-block;"></span>Remove</p>
+                                            <p><span className="tab" style="display: inline-block;"></span>Cayenne Pepper Powder</p>
+                                            <p><span className="tab" style="display: inline-block;"></span>Chipotle Powder</p>
+                                            <p><span className="tab" style="display: inline-block;"></span>Chili Powder</p>
                                         </div>
                                     </div>
 
@@ -153,43 +155,45 @@ function StartPasta() {
                                 <h3>Materials</h3>
                                 <div style="margin-left: 25px">
                                     <ul>
-                                        <li><a type="button" onclick="togglePanel" data-toggle="collapse" data-target="#largePot">large pot (6-8 quarts)</a></li>
-                                        <li><a type="button" onclick="togglePanel" data-toggle="collapse" data-target="#saucePan">sauce pan</a></li>
-                                        <li><a type="button" onclick="togglePanel" data-toggle="collapse" data-target="#spoon">large cooking spoon</a></li>
-                                        <li><a type="button" onclick="togglePanel" data-toggle="collapse" data-target="#colander">colander</a></li>
+                                        <li><button type="button" data-toggle="collapse" data-target="#largePot">large pot (6-8 quarts)</button></li>
+                                        <li><button type="button" data-toggle="collapse" data-target="#saucePan">sauce pan</button></li>
+                                        <li><button type="button" data-toggle="collapse" data-target="#spoon">large cooking spoon</button></li>
+                                        <li><button type="button" data-toggle="collapse" data-target="#colander">colander</button></li>
                                     </ul>
 
-                                    <div id="largePot" class="popover" style="max-width: 100%; max-height: 100%">
+                                    <div id="largePot" className="popover" style="max-width: 100%; max-height: 100%">
                                         <iframe style="width: 300px; height: 234px"
-                                            src="./images/largePot.png"
-                                            allowfullscreen></iframe>
+                                            src="../images/largePot.png"
+                                            allowFullScreen></iframe>
                                     </div>
 
-                                    <div id="saucePan" class="popover" style="max-width: 100%; max-height: 100%">
+                                    <div id="saucePan" className="popover" style="max-width: 100%; max-height: 100%">
                                         <iframe style="width: 300px; height: 112px"
-                                            src="./images/saucePan.png"
-                                            allowfullscreen></iframe>
+                                            src="../images/saucePan.png"
+                                            allowFullScreen></iframe>
                                     </div>
 
-                                    <div id="spoon" class="popover" style="max-width: 100%; max-height: 100%">
+                                    <div id="spoon" className="popover" style="max-width: 100%; max-height: 100%">
                                         <iframe style="width: 300px; height: 299px"
-                                            src="./images/spoon.png"
-                                            allowfullscreen></iframe>
+                                            src="../images/spoon.png"
+                                            allowFullScreen></iframe>
                                     </div>
 
-                                    <div id="colander" class="popover" style="max-width: 100%; max-height: 100%">
+                                    <div id="colander" className="popover" style="max-width: 100%; max-height: 100%">
                                         <iframe style="width: 300px; height: 184px"
-                                            src="./images/colander.png"
-                                            allowfullscreen></iframe>
+                                            src="../images/colander.png"
+                                            allowFullScreen></iframe>
                                     </div>
 
                                 </div>
                             </div>
 
                             <br></br>
-                            <div id="nextButton" style="position: relative; margin-left: 300px">
-                                <button type="button" style="background-color: #C59BEB; padding: 10px"
-                                    onclick="window.location.href='pastaMain.html'">Next</button>
+                            <div id="nextbutton" style="position: relative; margin-left: 300px">
+                                <Link to="/pastaMain">
+                                    <button type="button" style="background-color: #C59BEB; padding: 10px">Next</button>
+                                </Link>
+                                
                             </div>
                         </div>
 
